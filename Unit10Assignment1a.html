@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        /**
+         * Problem #1
+
+         Use the animate() method to set the font-size of <div> to 100 pixels.
+         The duration of the effect should be "slow".
+         */
+
+      //  $(document).ready(function(){
+            $(document).ready(function(){
+                $("#ClickMe").click(function () {
+                    $("#AnimateMe").animate({
+                        "font-size" : "100px"
+                    });
+                });
+            });
+    </script>
+</head>
+<body>
+<p><input type="button" value="Click Me" id="ClickMe" /></p>
+<p id="AnimateMe">Hello World?</p>
+</body>
+</html>
